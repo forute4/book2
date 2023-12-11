@@ -6,9 +6,9 @@
           <p>name</p>
           <p>introduction</p>
 
-          <%#= link_to edit_user_path(), class: "btn btn-secondary", method: :get do %>
+          <%= link_to edit_user_path(current_user), class: "btn btn-secondary", method: :get do %>
           <i class="fa-solid fa-user-gear"></i>
-          <%# end %>
+          <% end %>
 
 
       <h1>New Book</h1>

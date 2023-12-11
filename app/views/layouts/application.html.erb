@@ -18,7 +18,7 @@
       <% if user_signed_in? %>
       <li>
         <i class="fa-solid fa-house"></i>
-        <%= link_to "Home", users_path() %>
+        <%= link_to "Home", user_path(current_user) %>
       </li>
       <li>
         <i class="fa-solid fa-users"></i>
@@ -26,7 +26,7 @@
       </li>
       <li>
         <i class="fa-regular fa-book-open"></i>
-        <%#= link_to "Books",  %>
+        <%= link_to "Books",books_path  %>
       </li>
       <li>
         <i class="fa-solid fa-right-from-bracket"></i>
