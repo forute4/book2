@@ -1,4 +1,19 @@
 <p>book show</p>
 
+<h1>Books</h1>
+<tr>
+  <th>image</th>
+  <th>Title</th>
+  <th>Opinion</th>
+</tr>
+
+<tr>
+  <td></td>
+  <td><%= @book.title %></td>
+  <td><%= @book.body %></td>
+  <td><%= link_to "edit", edit_book_path(@book.id), class: "btn btn-info" %></td>
+  <td><%= link_to "Destroy", destroy_book_path, method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
+</tr>
+
 
 
