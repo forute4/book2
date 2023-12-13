@@ -9,12 +9,12 @@
     <th></th>
   </tr>
 </thead>
-<% @books.each do |books| %>
+<% @books.each do |book| %>
 <tbody>
   <tr>
     <th></th>
-    <th><%#=link_to "#{books.title}", book_path(books.id) %></th>
-    <th><%= books.body %></th>
+    <th><%=link_to "#{book.title}", book_path(book.id) %></th>
+    <th><%= book.body %></th>
     <th></th>
   </tr>
 </tbody>
