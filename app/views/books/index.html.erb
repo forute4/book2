@@ -1,1 +1,21 @@
 <p>books index</p>
+
+<h1>Books</h1>
+<thead>
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Opinion</th>
+    <th></th>
+  </tr>
+</thead>
+<% @books.each do |books| %>
+<tbody>
+  <tr>
+    <th></th>
+    <th><%#=link_to "#{books.title}", book_path(books.id) %></th>
+    <th><%= books.body %></th>
+    <th></th>
+  </tr>
+</tbody>
+<% end %>
