@@ -2,21 +2,21 @@
   <div class="row">
     <div class="col-md-3">
       <h1>User info</h1>
+        
+        <tbody>
+          <tr>
+            <th>name</th>
+            <th><%= @user.name %></th>
+          </tr>
+          <tr>
+            <th>introduction</th>
+            <th></th>
+          </tr>
+        </tbody>
 
-          <tbody>
-            <tr>
-              <th>name</th>
-              <th><%= @user.name %></th>
-            </tr>
-            <tr>
-              <th>introduction</th>
-              <th></th>
-            </tr>
-          </tbody>
-
-          <%= link_to edit_user_path(current_user), class: "btn btn-secondary", method: :get do %>
-          <i class="fa-solid fa-user-gear"></i>
-          <% end %>
+        <%= link_to edit_user_path(current_user), class: "btn btn-secondary", method: :get do %>
+        <i class="fa-solid fa-user-gear"></i>
+        <% end %>
 
 
       <h1>New Book</h1>

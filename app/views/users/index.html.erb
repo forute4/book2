@@ -12,8 +12,8 @@
 <% @users.each do |user| %>
 <tbody>
   <tr>
-    <td><%= user.name %></td>
     <td></td>
+    <td><%= user.name %></td>
     <td><%=link_to"show", user_path(user.id) %></td>
   </tr>
 </tbody>
