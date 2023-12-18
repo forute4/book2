@@ -26,26 +26,26 @@
             
             <a class="nav-link text-light">
             <%= link_to user_path(current_user) do %>
-              <i class="fa-solid fa-house"></i>Home
+             <p class="text-white"> <i class="fa-solid fa-house"></i>Home</p>
             <% end %>
             </a>
 
             <a class="nav-link text-light">
             <%= link_to users_path do %>
-              <i class="fa-solid fa-users"></i>Users
+              <p class="text-white"><i class="fa-solid fa-users"></i>Users</p>
             <% end %>
             </a>
 
 
             <a class="nav-link text-light">
             <%= link_to books_path do %>
-              <i class="fa-regular fa-book-open"></i>Books
+              <p class="text-white"><i class="fa-regular fa-book-open"></i>Books</p>
             <% end %>
             </a>
 
             <a class="nav-link text-light">
             <%= link_to destroy_user_session_path method: :delete do %>
-              <i class="fa-solid fa-right-from-bracket"></i>Log out
+              <p class="text-white"><i class="fa-solid fa-right-from-bracket"></i>Log out</p>
             <% end %>
             </a>
 
@@ -53,7 +53,7 @@
           
             <a class="nav-link text-light">
             <%= link_to  homes_top_path do %>
-              <i class="fa-solid fa-house"></i>Home
+              <p class="text-white"><i class="fa-solid fa-house"></i>Home</p>
             <% end %>
             </a>
             
@@ -61,19 +61,19 @@
 
             <a class="nav-link text-light">
             <%= link_to  homes_about_path do %>
-              <i class="fa-solid fa-paperclip"></i>About
+              <p class="text-white"><i class="fa-solid fa-paperclip"></i>About</p>
             <% end %>
             </a>
 
             <a class="nav-link text-light">
             <%= link_to new_user_registration_path do %>
-              <i class="fa-solid fa-user-plus"></i>Sign up
+              <p class="text-white"><i class="fa-solid fa-user-plus"></i>Sign up</P>
             <% end %>
             </a>
 
             <a class="nav-link text-light">
             <%= link_to  new_user_session_path do %>
-              <i class="fa-solid fa-right-to-bracket"></i>Log in
+              <p class="text-white"><i class="fa-solid fa-right-to-bracket"></i>Log in</P>
             <% end %>
             </a>
 
