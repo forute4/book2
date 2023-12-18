@@ -7,11 +7,13 @@ class UsersController < ApplicationController
   end
 
   def edit
+    is_matching_login_user
     @user = User.find(params[:id])
     @books =Book.all
   end
 
   def update
+    is_matching_login_user
     @user = User.find(params[:id])
     @user.update(user_params)
   if @user.save

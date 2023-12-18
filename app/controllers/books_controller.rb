@@ -11,6 +11,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id)
     else
       flash[:alert] ="Book was error create "
+      
     end
   end
 
