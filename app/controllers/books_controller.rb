@@ -4,7 +4,6 @@ class BooksController < ApplicationController
   end
 
   def create
-    is_matching_login_user
     @book = Book.new(book_params)
     @book.user_id = current_user.id
     if @book.save
@@ -32,7 +31,6 @@ class BooksController < ApplicationController
   end
   
   def update
-      is_matching_login_user
       @book = Book.find(params[:id])
       @book.update(book_params)
     if @book.save
