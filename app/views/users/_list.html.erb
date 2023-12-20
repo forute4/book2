@@ -1,9 +1,9 @@
 
 <div class="col-md-3">
     <h1>User info</h1>
-    
+
      <p><%= image_tag user.get_profile_image(100,100) %></p>
-    
+
       <table class="table">
         <tbody>
           <tr></tr>
@@ -18,7 +18,7 @@
         </tbody>
       </table>
 
-      <%= link_to edit_user_path(current_user), class: "btn btn-outline-secondary btn-block edit_user_148551", method: :get do %>
+      <%= link_to edit_user_path(user), class: "btn btn-outline-secondary btn-block edit_user_148551", method: :get do %>
       <i class="fa-solid fa-user-gear"></i>
       <% end %>
 
@@ -29,10 +29,10 @@
           <li><%= message %></li>
         <% end %>
       </ul>
-      
+
     <% end %>
-    
-    <h1>New Book</h1>
+
+    <h1>New book</h1>
     <%= form_with model: Book.new do |f| %>
      <h4>Title</h4>
       <%= f.text_field :title %>
