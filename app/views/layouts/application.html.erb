@@ -16,38 +16,37 @@
     <header >
       <div class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-      
-        <div class="row">
-          <%= link_to "Bookers", root_path, class:"navbar-brand" %>
-  
+        <!--<div class="row">-->
+          <div class=" navbar-brand">
+            <%= link_to "Bookers", root_path, class:"navbar-brand" %>
+          </div>
           
-            
-    
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+           
               <% if user_signed_in? %>
-    
-                
                 
                 <%= link_to user_path(current_user) do %>
-                 <p class="navbar-brand"> <i class="fa-solid fa-house"></i>Home</p>
+                 <p class="nav-link text-light navbar-brand"> <i class="fa-solid fa-house"></i>Home</p>
                 <% end %>
                 </a>
     
                 
                 <%= link_to users_path do %>
-                  <p class="navbar-brand"><i class="fa-solid fa-users"></i>Users</p>
+                  <p class="nav-link text-light navbar-brand"><i class="fa-solid fa-users"></i>Users</p>
                 <% end %>
                 </a>
     
     
                 
                 <%= link_to books_path do %>
-                  <p class="navbar-brand"><i class="fa-solid fa-book-open"></i>Books</p>
+                  <p class="nav-link text-light navbar-brand"><i class="fa-solid fa-book-open"></i>Books</p>
                 <% end %>
                 </a>
     
                 
                 <%= link_to destroy_user_session_path method: :delete do %>
-                  <p class="navbar-brand"><i class="fa-solid fa-right-from-bracket"></i>Log out</p>
+                  <p class="nav-link text-light navbar-brand"><i class="fa-solid fa-right-from-bracket"></i>Log out</p>
                 <% end %>
                 </a>
     
@@ -55,7 +54,7 @@
               
                 
                 <%= link_to  root_path do %>
-                  <p class="navbar-brand"><i class="fa-solid fa-house"></i>Home</p>
+                  <p class="nav-link text-light navbar-brand"><i class="fa-solid fa-house"></i>Home</p>
                 <% end %>
                 </a>
                 
@@ -63,29 +62,28 @@
     
                 
                 <%= link_to  about_path do %>
-                  <p class="navbar-brand"><i class="fa-solid fa-link"></i>About</p>
+                  <p class="nav-link text-light navbar-brand"><i class="fa-solid fa-link"></i>About</p>
                 <% end %>
                 </a>
     
                 
                 <%= link_to new_user_registration_path do %>
-                  <p class="navbar-brand"><i class="fa-solid fa-user-plus"></i>Sign up</P>
+                  <p class="nav-link text-light navbar-brand"><i class="fa-solid fa-user-plus"></i>Sign up</P>
                 <% end %>
                 </a>
     
                 
                 <%= link_to  new_user_session_path do %>
-                  <p class="navbar-brand"><i class="fa-solid fa-right-to-bracket"></i>Log in</P>
+                  <p class="nav-link text-light navbar-brand"><i class="fa-solid fa-right-to-bracket"></i>Log in</P>
                 <% end %>
                 </a>
     
               <% end %>
     
-              </ul>
-            </div>
-          
+              
+            </ul>
           </div>
-      
+        <!--</div>-->
       </div>
       </div>
       
